@@ -1,0 +1,12 @@
+{
+    "name": "paulinevos/bisect-regression-testing",
+    "description": "For the purpose of demonstrating the power of bisect in combination with regression testing",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Pauline Vos",
+            "email": "pvos88@gmail.com"
+        }
+    ],
+    "require": {}
+}
