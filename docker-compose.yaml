@@ -1,0 +1,9 @@
+services:
+  trogdor:
+    build: .
+    container_name: trogdor
+    volumes:
+      - trogdor:/var/www/html
+    command: "php ./run.php"
+volumes:
+  trogdor:

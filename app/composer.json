@@ -8,5 +8,15 @@
             "email": "pvos88@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "myclabs/php-enum": "^1.8"
+    },
+    "autoload": {
+        "psr-4": {"DragonApp\\": "src/"}
+    },
+    "autoload-dev": {
+        "psr-0": {
+            "Tests\\": "tests/"
+        }
+    }
 }
