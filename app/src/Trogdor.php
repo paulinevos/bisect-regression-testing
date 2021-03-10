@@ -23,7 +23,9 @@ final class Trogdor
             $cottage->burn();
         }
 
-        echo "Burnination completed.\n";
+        if ($village->isBurned()) {
+            echo "Burnination completed.\n";
+        }
     }
 
     public function isDragonMan(): bool
