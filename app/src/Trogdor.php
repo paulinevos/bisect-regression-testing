@@ -8,6 +8,13 @@ namespace DragonApp;
  */
 final class Trogdor
 {
+    private Type $type;
+
+    public function __construct(Type $type = null)
+    {
+        $this->type = $type ?? Type::dragon();
+    }
+
     public function burninate(Village $village): void
     {
         echo "Commencing burnination.\n";
@@ -17,5 +24,10 @@ final class Trogdor
         }
 
         echo "Burnination completed.\n";
+    }
+
+    public function isMan(): bool
+    {
+        return $this->type->equals(Type::man());
     }
 }
