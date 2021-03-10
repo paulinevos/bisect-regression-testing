@@ -26,8 +26,8 @@ final class Trogdor
         echo "Burnination completed.\n";
     }
 
-    public function isMan(): bool
+    public function isDragonMan(): bool
     {
-        return $this->type->equals(Type::man());
+        return $this->type->equals(Type::dragonMan());
     }
 }
