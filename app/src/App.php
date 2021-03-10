@@ -9,7 +9,7 @@ final class App
     public function run(): void
     {
         $village = Village::create();
-        $trogdor = new Trogdor(Type::dragonMan());
+        $trogdor = new Trogdor();
 
         if ($trogdor->isDragonMan()) {
             $trogdor->burninate($village);
