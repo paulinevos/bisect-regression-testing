@@ -26,4 +26,9 @@ final class Cottage
 
         $this->status = Status::burned();
     }
+
+    public function isInTact(): bool
+    {
+        return $this->status->equals(Status::inTact());
+    }
 }
