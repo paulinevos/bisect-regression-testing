@@ -19,4 +19,11 @@ final class Cottage
     {
         return new static($status ?? Status::inTact());
     }
+
+    public function burn(): void
+    {
+        echo "Aaaahh!!! My cottage is burning!\n";
+
+        $this->status = Status::burned();
+    }
 }

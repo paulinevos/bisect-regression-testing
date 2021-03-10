@@ -17,6 +17,9 @@
     "require-dev": {
         "phpunit/phpunit": "^9.5"
     },
+    "require": {
+        "myclabs/php-enum": "^1.8"
+    },
     "config": {
         "platform": {
             "php": "7.4"
