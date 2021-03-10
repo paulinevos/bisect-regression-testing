@@ -8,5 +8,16 @@
             "email": "pvos88@gmail.com"
         }
     ],
-    "require": {}
+    "autoload": {
+        "psr-4": { "DragonApp\\": "app/src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "DragonApp\\Tests\\": "app/tests/" }
+    },
+    "require": {},
+    "config": {
+        "platform": {
+            "php": "7.4"
+        }
+    }
 }
