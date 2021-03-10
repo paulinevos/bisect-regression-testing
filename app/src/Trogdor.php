@@ -30,4 +30,9 @@ final class Trogdor
     {
         return $this->type->equals(Type::dragonMan());
     }
+
+    public function isDragon(): bool
+    {
+    	return $this->type->equals(Type::dragon());
+    }
 }
