@@ -22,7 +22,7 @@ final class Cottage
 
     public function burn(): void
     {
-        echo "Aaaahh!!! My cottage is burning!\n";
+        echo "🔥🗣 Aaaahh!!! My cottage is burning!\n";
 
         $this->status = Status::burned();
     }
