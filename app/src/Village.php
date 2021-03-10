@@ -32,4 +32,13 @@ final class Village
     {
         return $this->cottages;
     }
+
+    public function isBurned(): bool
+    {
+        return empty(
+            array_filter($this->cottages, function($cottage) {
+                $cottage->isInTact();
+            })
+        );
+    }
 }
