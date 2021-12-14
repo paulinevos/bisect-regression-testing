@@ -1,0 +1,6 @@
+services:
+  trogdor:
+    build: .
+    container_name: trogdor
+    volumes:
+      - ./:/var/www/
