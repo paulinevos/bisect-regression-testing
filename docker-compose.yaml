@@ -1,6 +1,6 @@
 services:
   trogdor:
-    build: .
+    image: synon/trogdor:latest
     container_name: trogdor
     volumes:
       - ./:/var/www/
